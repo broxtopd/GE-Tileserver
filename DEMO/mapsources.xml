@@ -1,0 +1,45 @@
+<mapSources>
+	<folder name="ESRI" type="radio">
+		<customMapSource>
+			<name>National Geographic</name>
+			<minZoom>0</minZoom>
+			<maxZoom>16</maxZoom>
+			<url>http://services.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{$z}/{$y}/{$x}</url>
+		</customMapSource>
+		<customMapSource>
+			<name>ESRI Hillshade</name>
+			<minZoom>0</minZoom>
+			<maxZoom>13</maxZoom>
+			<checkStatus/>
+			<url>http://services.arcgisonline.com/arcgis/rest/services/World_Shaded_Relief/MapServer/tile/{$z}/{$y}/{$x}</url>
+		</customMapSource>
+		<customMapSource>
+			<name>ESRI Basemap</name>
+			<minZoom>0</minZoom>
+			<maxZoom>18</maxZoom>
+			<url>http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{$z}/{$y}/{$x}</url>
+		</customMapSource>
+	</folder>
+	<folder name="NZTopo" type="normal">
+		<customMapSource>
+			<name>NZTopo East</name>
+			<minZoom>6</minZoom>
+			<maxZoom>15</maxZoom>
+			<minX>-180</minX>
+			<maxX>-174</maxX>
+			<minY>-53</minY>
+			<maxY>-28</maxY>
+			<url>http://nz1.nztopomaps.com/{$z}/{$x}/{$invY}.png</url>
+		</customMapSource>
+		<customMapSource>
+			<name>NZTopo West</name>
+			<minZoom>6</minZoom>
+			<maxZoom>15</maxZoom>
+			<minX>165</minX>
+			<maxX>180</maxX>
+			<minY>-53</minY>
+			<maxY>-28</maxY>
+			<url>http://nz1.nztopomaps.com/{$z}/{$x}/{$invY}.png</url>
+		</customMapSource>
+	</folder>
+</mapSources>

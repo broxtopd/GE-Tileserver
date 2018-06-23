@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Folder>
+	<name>mapsources</name>
+        <Style>
+		<ListStyle>
+			<listItemType>radioFolder</listItemType>
+			<bgColor>00ffffff</bgColor>
+			<maxSnippetLines>2</maxSnippetLines>
+		</ListStyle>
+	</Style><Folder>
+	<name>ESRI</name>        <Style>
+		<ListStyle>
+			<listItemType>radioFolder</listItemType>
+		</ListStyle>
+	</Style>
+<Folder>
+    	<name>National Geographic</name>
+<NetworkLink>
+	<name>National Geographic</name>
+	<visibility>0</visibility>
+	<Link>
+		<href>http://localhost:8081?url=http%3A%2F%2Fservices.arcgisonline.com%2FArcGIS%2Frest%2Fservices%2FNatGeo_World_Map%2FMapServer%2Ftile%2F%7B%24z%7D%2F%7B%24y%7D%2F%7B%24x%7D;&amp;zoom=0-16;</href>
+	</Link>
+</NetworkLink>
+</Folder>
+<Folder>
+    	<name>ESRI Hillshade</name>
+<NetworkLink>
+	<name>ESRI Hillshade</name>
+	<visibility>0</visibility>
+	<Link>
+		<href>http://localhost:8081?url=http%3A%2F%2Fservices.arcgisonline.com%2Farcgis%2Frest%2Fservices%2FWorld_Shaded_Relief%2FMapServer%2Ftile%2F%7B%24z%7D%2F%7B%24y%7D%2F%7B%24x%7D;&amp;zoom=0-13;</href>
+	</Link>
+</NetworkLink>
+</Folder>
+<Folder>
+    	<name>ESRI Basemap</name>
+<NetworkLink>
+	<name>ESRI Basemap</name>
+	<visibility>0</visibility>
+	<Link>
+		<href>http://localhost:8081?url=http%3A%2F%2Fservices.arcgisonline.com%2FArcGIS%2Frest%2Fservices%2FWorld_Topo_Map%2FMapServer%2Ftile%2F%7B%24z%7D%2F%7B%24y%7D%2F%7B%24x%7D;&amp;zoom=0-18;</href>
+	</Link>
+</NetworkLink>
+</Folder>
+</Folder><Folder>
+	<name>NZTopo</name>
+<Folder>
+    	<name>NZTopo East</name>
+<NetworkLink>
+	<name>NZTopo East</name>
+	<visibility>0</visibility>
+	<Link>
+		<href>http://localhost:8081?url=http%3A%2F%2Fnz1.nztopomaps.com%2F%7B%24z%7D%2F%7B%24x%7D%2F%7B%24invY%7D.png;&amp;zoom=6-15;&amp;ullr=-180_-28_-174_-53;</href>
+	</Link>
+</NetworkLink>
+</Folder>
+<Folder>
+    	<name>NZTopo West</name>
+<NetworkLink>
+	<name>NZTopo West</name>
+	<visibility>0</visibility>
+	<Link>
+		<href>http://localhost:8081?url=http%3A%2F%2Fnz1.nztopomaps.com%2F%7B%24z%7D%2F%7B%24x%7D%2F%7B%24invY%7D.png;&amp;zoom=6-15;&amp;ullr=165_-28_180_-53;</href>
+	</Link>
+</NetworkLink>
+</Folder>
+</Folder>
+</Folder></kml>
