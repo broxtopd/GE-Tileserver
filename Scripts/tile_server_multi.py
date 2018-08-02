@@ -42,10 +42,10 @@ class ThreadPoolWSGIServer(WSGIServer):
     def process_request_thread(self, request, client_address):
         try:
             self.finish_request(request, client_address)
-            self.shutdown_request(request)
+#            self.shutdown_request(request)
         except:
             self.handle_error(request, client_address)
-            self.shutdown_request(request)
+#            self.shutdown_request(request)
 
     def process_request(self, request, client_address):
         self.pool.apply_async(self.process_request_thread, args=(request, client_address))
