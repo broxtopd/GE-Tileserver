@@ -10,7 +10,7 @@ to add ampersands (&) after each command (do not do this until you verify that t
 understand what each is doing).  To change the ports used for the kml and reprojection servers, modify "addr.txt" in the 
 "Scripts" folder
 
-Any tms mapsource that can be accessed via a url can be displayed (provided you have a legal right to see the map data).  
+Any tms mapsource that can be accessed via a url can be displayed (provided you are allowed to access the map data).  
 To generate a KML file with all of the map sources (information about these are found in .xml files such as 
 DEMO/mapsources.xml), use the python program 'generate_mapsource_kml.py'.  For example, to create a kml of map 
 sources specified in DEMO/mapsources.xml, open a terminal window in this directory and type:
