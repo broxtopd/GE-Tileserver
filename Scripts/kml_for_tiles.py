@@ -563,12 +563,10 @@ class KMLForTiles(object):
         serverpart_list = self.serverparts.split('_')
         serverpart = random.choice(serverpart_list)
         icon_url = icon_url.replace('{$s}',serverpart)
-        querystring = querystring.replace(urllib.quote('{$s}'),serverpart)
-        print querystring
-        
-        print icon_url
-        print querystring
-        
+        if major == 2:  
+            querystring = querystring.replace(urllib.quote('{$s}'),serverpart)
+        elif major == 3:
+            querystring = querystring.replace(urllib.parse.quote('{$s}'),serverpart)
         if tz is not None:
             if self.webTiles == 1:
                 if self.profile == 'mercator' and ((tz < 6 and ('$z' in icon_url)) or (tz < 6 and ('WMS:BBOX' in icon_url))) or self.forceDynamicTile == True:
